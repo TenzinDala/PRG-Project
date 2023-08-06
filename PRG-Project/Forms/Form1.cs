@@ -56,7 +56,7 @@ namespace PRG_Project
             else
             {
 
-                string sqlstr = "SELECT * FROM Products WHERE ComputerType LIKE '" + "%"  + textBoxSearchBox.Text+ "%" + "'";
+                string sqlstr = "SELECT * FROM Products WHERE ComputerType LIKE '" + "%" + textBoxSearchBox.Text+ "%" + "'";
 
                 DataTable vt = new DataTable();
 
