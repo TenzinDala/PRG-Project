@@ -19,6 +19,7 @@ namespace PRG_Project
         public static string price;
         public static string productQuantity;
         public static string Sold;
+        public static string SelectedModel;
 
         public MainPage()
         {
@@ -96,6 +97,7 @@ namespace PRG_Project
                 DataGridViewRow selectedRow = dataGridProducts.SelectedRows[0];
 
                 SelectedItemID = selectedRow.Cells[0].Value.ToString();
+                SelectedModel = selectedRow.Cells[2].Value.ToString();
                 productQuantity = selectedRow.Cells[3].Value.ToString();
                 price = selectedRow.Cells[4].Value.ToString();
                 Sold = selectedRow.Cells[5].Value.ToString();

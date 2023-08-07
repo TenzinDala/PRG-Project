@@ -36,6 +36,10 @@ namespace PRG_Project.Forms
                 DataRow row = vt.Rows[0];
 
                 labelName.Text = row["Model"].ToString();
+                labelDescription.Text = row["Description"].ToString();
+                labelRAM.Text = row["RAM"].ToString();
+                labelCPU.Text = row["CPUProcessor"].ToString();
+                labelHD.Text = row["HDCapacity"].ToString();
 
                 string modelName = labelName.Text;
 

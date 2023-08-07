@@ -39,6 +39,10 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.textBoxQuantity = new System.Windows.Forms.TextBox();
             this.labelQuantity = new System.Windows.Forms.Label();
+            this.textBoxNumber = new System.Windows.Forms.TextBox();
+            this.labelNumber = new System.Windows.Forms.Label();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.labelAddress = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -89,7 +93,7 @@
             // 
             // textBoxCardNumber
             // 
-            this.textBoxCardNumber.Location = new System.Drawing.Point(205, 223);
+            this.textBoxCardNumber.Location = new System.Drawing.Point(205, 296);
             this.textBoxCardNumber.Name = "textBoxCardNumber";
             this.textBoxCardNumber.Size = new System.Drawing.Size(145, 20);
             this.textBoxCardNumber.TabIndex = 6;
@@ -98,7 +102,7 @@
             // 
             this.labelCreditCard.AutoSize = true;
             this.labelCreditCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCreditCard.Location = new System.Drawing.Point(50, 218);
+            this.labelCreditCard.Location = new System.Drawing.Point(50, 291);
             this.labelCreditCard.Name = "labelCreditCard";
             this.labelCreditCard.Size = new System.Drawing.Size(151, 25);
             this.labelCreditCard.TabIndex = 5;
@@ -108,7 +112,7 @@
             // 
             this.buttonFinish.BackColor = System.Drawing.Color.Lime;
             this.buttonFinish.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFinish.Location = new System.Drawing.Point(390, 325);
+            this.buttonFinish.Location = new System.Drawing.Point(390, 369);
             this.buttonFinish.Name = "buttonFinish";
             this.buttonFinish.Size = new System.Drawing.Size(116, 59);
             this.buttonFinish.TabIndex = 7;
@@ -120,7 +124,7 @@
             // 
             this.buttonCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.Location = new System.Drawing.Point(243, 325);
+            this.buttonCancel.Location = new System.Drawing.Point(243, 369);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(108, 59);
             this.buttonCancel.TabIndex = 8;
@@ -130,7 +134,7 @@
             // 
             // textBoxQuantity
             // 
-            this.textBoxQuantity.Location = new System.Drawing.Point(516, 218);
+            this.textBoxQuantity.Location = new System.Drawing.Point(516, 296);
             this.textBoxQuantity.Name = "textBoxQuantity";
             this.textBoxQuantity.Size = new System.Drawing.Size(145, 20);
             this.textBoxQuantity.TabIndex = 10;
@@ -139,11 +143,45 @@
             // 
             this.labelQuantity.AutoSize = true;
             this.labelQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuantity.Location = new System.Drawing.Point(388, 213);
+            this.labelQuantity.Location = new System.Drawing.Point(388, 291);
             this.labelQuantity.Name = "labelQuantity";
             this.labelQuantity.Size = new System.Drawing.Size(104, 25);
             this.labelQuantity.TabIndex = 9;
             this.labelQuantity.Text = "Quantity :";
+            // 
+            // textBoxNumber
+            // 
+            this.textBoxNumber.Location = new System.Drawing.Point(516, 223);
+            this.textBoxNumber.Name = "textBoxNumber";
+            this.textBoxNumber.Size = new System.Drawing.Size(145, 20);
+            this.textBoxNumber.TabIndex = 14;
+            // 
+            // labelNumber
+            // 
+            this.labelNumber.AutoSize = true;
+            this.labelNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumber.Location = new System.Drawing.Point(388, 218);
+            this.labelNumber.Name = "labelNumber";
+            this.labelNumber.Size = new System.Drawing.Size(99, 25);
+            this.labelNumber.TabIndex = 13;
+            this.labelNumber.Text = "Number :";
+            // 
+            // textBoxAddress
+            // 
+            this.textBoxAddress.Location = new System.Drawing.Point(205, 222);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(145, 20);
+            this.textBoxAddress.TabIndex = 12;
+            // 
+            // labelAddress
+            // 
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddress.Location = new System.Drawing.Point(73, 216);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(103, 25);
+            this.labelAddress.TabIndex = 11;
+            this.labelAddress.Text = "Address :";
             // 
             // Order
             // 
@@ -151,6 +189,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxNumber);
+            this.Controls.Add(this.labelNumber);
+            this.Controls.Add(this.textBoxAddress);
+            this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.textBoxQuantity);
             this.Controls.Add(this.labelQuantity);
             this.Controls.Add(this.buttonCancel);
@@ -182,5 +224,9 @@
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.TextBox textBoxQuantity;
         private System.Windows.Forms.Label labelQuantity;
+        private System.Windows.Forms.TextBox textBoxNumber;
+        private System.Windows.Forms.Label labelNumber;
+        private System.Windows.Forms.TextBox textBoxAddress;
+        private System.Windows.Forms.Label labelAddress;
     }
 }
