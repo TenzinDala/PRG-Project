@@ -31,10 +31,12 @@
             this.pictureBoxProduct = new System.Windows.Forms.PictureBox();
             this.labelName = new System.Windows.Forms.Label();
             this.labelSpecs = new System.Windows.Forms.Label();
-            this.labelSpecsInfo = new System.Windows.Forms.Label();
+            this.labelRAM = new System.Windows.Forms.Label();
             this.labelDescription = new System.Windows.Forms.Label();
             this.buttonBuy = new System.Windows.Forms.Button();
             this.buttonReturn = new System.Windows.Forms.Button();
+            this.labelHD = new System.Windows.Forms.Label();
+            this.labelCPU = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProduct)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,23 +74,24 @@
             this.labelSpecs.TabIndex = 2;
             this.labelSpecs.Text = "Specs";
             // 
-            // labelSpecsInfo
+            // labelRAM
             // 
-            this.labelSpecsInfo.AutoSize = true;
-            this.labelSpecsInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSpecsInfo.Location = new System.Drawing.Point(423, 70);
-            this.labelSpecsInfo.Name = "labelSpecsInfo";
-            this.labelSpecsInfo.Size = new System.Drawing.Size(70, 25);
-            this.labelSpecsInfo.TabIndex = 3;
-            this.labelSpecsInfo.Text = "label1";
+            this.labelRAM.AutoSize = true;
+            this.labelRAM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRAM.Location = new System.Drawing.Point(423, 70);
+            this.labelRAM.Name = "labelRAM";
+            this.labelRAM.Size = new System.Drawing.Size(70, 25);
+            this.labelRAM.TabIndex = 3;
+            this.labelRAM.Text = "label1";
             // 
             // labelDescription
             // 
             this.labelDescription.AutoSize = true;
-            this.labelDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDescription.Location = new System.Drawing.Point(14, 329);
+            this.labelDescription.MaximumSize = new System.Drawing.Size(400, 5000);
             this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(70, 25);
+            this.labelDescription.Size = new System.Drawing.Size(51, 20);
             this.labelDescription.TabIndex = 4;
             this.labelDescription.Text = "label1";
             // 
@@ -96,7 +99,7 @@
             // 
             this.buttonBuy.BackColor = System.Drawing.Color.Lime;
             this.buttonBuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBuy.Location = new System.Drawing.Point(392, 316);
+            this.buttonBuy.Location = new System.Drawing.Point(428, 317);
             this.buttonBuy.Name = "buttonBuy";
             this.buttonBuy.Size = new System.Drawing.Size(139, 57);
             this.buttonBuy.TabIndex = 5;
@@ -110,7 +113,7 @@
             // 
             this.buttonReturn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.buttonReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonReturn.Location = new System.Drawing.Point(392, 396);
+            this.buttonReturn.Location = new System.Drawing.Point(428, 397);
             this.buttonReturn.Name = "buttonReturn";
             this.buttonReturn.Size = new System.Drawing.Size(139, 59);
             this.buttonReturn.TabIndex = 6;
@@ -120,16 +123,38 @@
             this.buttonReturn.MouseEnter += new System.EventHandler(this.buttonReturn_MouseEnter);
             this.buttonReturn.MouseLeave += new System.EventHandler(this.buttonReturn_MouseLeave);
             // 
+            // labelHD
+            // 
+            this.labelHD.AutoSize = true;
+            this.labelHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHD.Location = new System.Drawing.Point(423, 112);
+            this.labelHD.Name = "labelHD";
+            this.labelHD.Size = new System.Drawing.Size(70, 25);
+            this.labelHD.TabIndex = 7;
+            this.labelHD.Text = "label1";
+            // 
+            // labelCPU
+            // 
+            this.labelCPU.AutoSize = true;
+            this.labelCPU.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCPU.Location = new System.Drawing.Point(423, 159);
+            this.labelCPU.Name = "labelCPU";
+            this.labelCPU.Size = new System.Drawing.Size(70, 25);
+            this.labelCPU.TabIndex = 8;
+            this.labelCPU.Text = "label1";
+            // 
             // Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(654, 518);
+            this.Controls.Add(this.labelCPU);
+            this.Controls.Add(this.labelHD);
             this.Controls.Add(this.buttonReturn);
             this.Controls.Add(this.buttonBuy);
             this.Controls.Add(this.labelDescription);
-            this.Controls.Add(this.labelSpecsInfo);
+            this.Controls.Add(this.labelRAM);
             this.Controls.Add(this.labelSpecs);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.pictureBoxProduct);
@@ -147,9 +172,11 @@
         private System.Windows.Forms.PictureBox pictureBoxProduct;
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.Label labelSpecs;
-        private System.Windows.Forms.Label labelSpecsInfo;
+        private System.Windows.Forms.Label labelRAM;
         private System.Windows.Forms.Label labelDescription;
         private System.Windows.Forms.Button buttonBuy;
         private System.Windows.Forms.Button buttonReturn;
+        private System.Windows.Forms.Label labelHD;
+        private System.Windows.Forms.Label labelCPU;
     }
 }
